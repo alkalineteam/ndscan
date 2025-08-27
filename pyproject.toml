@@ -49,13 +49,12 @@ sipyco = { git = "https://github.com/m-labs/sipyco.git", tag = "v1.9" }
 # CabbageDevelopment/qasync#128. Can be removed once there is a released version.
 qasync = { git = "https://github.com/dnadlinger/qasync.git", branch = "windows-qmutexlocker-fix" }
 
-# [build-system]
-# requires = ["hatchling"]
-# build-backend = "hatchling.build"
+# Previous build backend (hatchling) commented out below retained for history.
+# Switched to setuptools.
 
 [build-system]
-requires = ["uv>=0.4.0"]
-build-backend = "uv_build"
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [tool.poe.tasks]
 docs = "make -C $POE_ROOT/docs html"

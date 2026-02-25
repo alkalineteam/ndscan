@@ -39,7 +39,8 @@ dev = [
 
 [tool.uv.sources]
 # artiq = { git = "https://github.com/m-labs/artiq.git", branch = "master" }
-artiq = { git = "https://github.com/alkalineteam/ARTIQ-alkaline-fork/tree/master", branch = "main" }
+# artiq = { git = "https://github.com/alkalineteam/ARTIQ-alkaline/tree/master", branch = "main" }
+artiq = { git = "https://github.com/alkalineteam/artiq", branch = "master"}
 oitg = { git = "https://github.com/oxfordiontrapgroup/oitg.git" }
 
 #.Pin SiPyCo to v1.9 for now to avoid PYON v2 fiasco (silent, breaking format change).
